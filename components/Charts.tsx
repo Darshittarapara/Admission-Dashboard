@@ -33,7 +33,7 @@ const DataCharts = () => {
                     }} />
                     <YAxis dataKey={'total'} />
                     <Tooltip />
-                    <Legend />
+                    
 
                     <Bar dataKey={'total'} fill='#8884d8' xAxisId={'_id'} yAxisId={'_id'} />
                 </BarChart>}

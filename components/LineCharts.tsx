@@ -27,7 +27,7 @@ const LineCharts = () => {
 
     return (
         <Paper elevation={10} className='flex flex-col gap-10 p-4'>
-            <Box component={'div'} className='flex gap-5'>
+            <Box component={'div'} className='flex flex-col md:flex-row gap-5'>
                 <LocalizationProvider dateAdapter={AdapterDayjs}>
                     <DatePicker
                         label='From date'
@@ -60,7 +60,7 @@ const LineCharts = () => {
                 </LocalizationProvider>
             </Box>
             {filterLineData.length == 0 ? <Typography>No data found</Typography> : <LineChart
-                style={{ width: '100%', maxWidth: '700px', maxHeight: '70vh', aspectRatio: 1.618 }}
+                style={{ width: '100%', maxWidth: '100%', aspectRatio: 1.618 }}
                 responsive
                 data={filterLineData}
                 margin={{
